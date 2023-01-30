@@ -1,5 +1,6 @@
 package saebelma.nesting.application;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -30,7 +31,8 @@ public class SquaresInCircle {
             Math.sqrt(41) / 2, 13 * Math.sqrt(145) / 48, 3.3471, 3.412,
             Math.sqrt(27985) / 48, 5 * Math.sqrt(2) / 2, Math.sqrt(40385) / 56,
             Math.sqrt(13), 3.629, Math.sqrt(53) / 2 };
-    static String imagePath = "C:\\Users\\Markus Säbel\\Dropbox\\MASTER OF SCIENCE\\Abschlussmodul\\Nesting-Saebel\\Latex\\images\\";
+    
+    static final String imagePath = "svgs";
 
     private SquaresInCircle() {
     };

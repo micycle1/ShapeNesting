@@ -12,7 +12,7 @@ import saebelma.nesting.geometry.elements.Point;
  */
 public class SVG {
 
-    private static String path = "C:\\Users\\Markus Säbel\\Dropbox\\MASTER OF SCIENCE\\Abschlussmodul\\Implementierung\\";
+    private static String path = "svgs";
 
     private static Style style = Style.SOLID;
     private static StrokeWidth strokeWidth = new StrokeWidth(1, "px");
@@ -50,8 +50,9 @@ public class SVG {
      */
     public static BufferedWriter openHTMLFile(String fileName)
             throws IOException {
-        File htmlFile = new File(path + "/" + fileName);
+        File htmlFile = new File(path , fileName);
         BufferedWriter writer = Files.newBufferedWriter(htmlFile.toPath());
+        writer.flush();
         writer.write("<!DOCTYPE html>\n");
         writer.write("<html>\n");
         writer.write("<body>\n");
@@ -83,7 +84,9 @@ public class SVG {
      */
     public static BufferedWriter openSVGFile(String fileName)
             throws IOException {
-        File svgFile = new File(path + "/" + fileName);
+        File dir = new File(path);
+        dir.mkdirs();
+        File svgFile = new File(path, fileName);
         BufferedWriter writer = Files.newBufferedWriter(svgFile.toPath());
         return writer;
     }

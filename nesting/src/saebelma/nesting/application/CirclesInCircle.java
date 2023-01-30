@@ -40,7 +40,7 @@ public class CirclesInCircle {
             1 / 0.154161517947058164731937622494,
             1 / 0.151264028246755464100569487881,
             1 / 0.149316776635116022601721177537 };
-    static String imagePath = "C:\\Users\\Markus Säbel\\Dropbox\\MASTER OF SCIENCE\\Abschlussmodul\\Nesting-Saebel\\Latex\\images\\";
+    static String imagePath = "svg";
 
     /**
      * The radii of the optimal solutions are multiplied by this factor. By varying this factors, you
